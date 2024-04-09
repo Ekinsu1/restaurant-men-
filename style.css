@@ -1,0 +1,133 @@
+body {
+    font-family: Fantasy;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px; /* Reducing the padding for a more compact layout */
+    background-color: #c04848;
+    box-shadow: 0px 0px 18px 1px rgb(255, 255, 255);
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.button {
+    font-family: Fantasy;
+    background-color: #8eded7;
+    padding: 0px 0px;
+    margin: 30px 50px; /* Adding some space between buttons */
+    border: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 0px 18px 1px rgb(237, 232, 232);
+    font-size: 15px;
+}
+
+.button__image {
+    padding: 0px;
+    margin: 0;
+    margin-bottom: -10px;
+
+    max-width: 250px;
+    max-height: 180px;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+
+.button--is-active {
+    background-color: #299391;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu--is-visible {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item {
+    padding: 10px;
+    margin: 20px 10px;
+    border: 0 solid #ddd;
+    border-radius: 4px;
+    background-color: 	#ffffff;
+    box-shadow: 0 0 30px rgb(255, 255, 255) inset, 0 0 10px 4px rgb(255, 255, 255);
+
+
+    text-align: center; /* Centering the text within the item container */
+}
+
+.item__title {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.item__price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.item__description {
+    font-size: 16px;
+    margin: 0;
+}
+
+.item__image {
+    max-width: 200px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+/* Güncellenmiş CSS */
+.button {
+    /* Diğer stillendirme kodları */
+    position: relative; /* Fotoğrafın içindeki yazının pozisyonunu ayarlamak için eklenen stil */
+}
+
+.button__title {
+    font-family: Fantasy;
+    font-size: 30px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-shadow: 0 10px px rgb(255, 255, 255);
+   
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.sub-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Alt menüleri görünür hale getirmek için stil */
+.sub-menu--is-visible {
+    display: flex;
+}

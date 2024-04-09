@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="menu-container">
+        <h2>Kaptan Restaurant</h2>
+        <div class="buttons-container">
+            <button class="button button--is-active" data-target="pizzaMenu" onclick="toggleMenu('pizzaMenu')">
+                <img class="button__image" src="pizza3.jpeg" alt="Pizzalar">
+                <h3 class="button__title">Pizzalar</h3>
+
+            </button>
+        </div>
+
+        <div class="menu" id="pizzaMenu">
+            <div class="item">
+                <img class="item__image" src="karisik_pizza.jpeg" alt="Karışık Pizza">
+                <h3 class="item__title">Karışık Pizza</h3>
+                <span class="item__price">Büyük boy 110₺</span> <br>
+                <span class="item__price">Orta boy 90₺</span> <br>
+                <span class="item__price">Küçük boy 80₺</span>
+            </div>
+            <div class="item">
+                <img class="item__image" src="Ton_Balikli_Pizza.jpeg" alt="Ton Balıklı Pizza">
+                <h3 class="item__title">Ton Balıklı Pizza</h3>
+                <span class="item__price">Büyük boy 110₺</span> <br>
+                <span class="item__price">Orta boy 90₺</span> <br>
+                <span class="item__price">Küçük boy 80₺</span>
+            </div>
+            <div class="item">
+                <img class="item__image" src="tavuklu_pizza.jpeg" alt="Tavuklu pizza">
+                <h3 class="item__title">Tavuklu Pizza</h3>
+                <span class="item__price">Büyük boy 110₺</span> <br>
+                <span class="item__price">Orta boy 90₺</span> <br>
+                <span class="item__price">Küçük boy 80₺</span>
+            </div>
+            <div class="item">
+                <img class="item__image" src="vejetaryen_pizza.jpeg" alt="Vejetaryen pizza">
+                <h3 class="item__title">Vejetaryen Pizza</h3>
+                <span class="item__price">Büyük boy 110₺</span> <br>
+                <span class="item__price">Orta boy 90₺</span> <br>
+                <span class="item__price">Küçük boy 80₺</span>
+            </div>
+            <!-- Diğer pizza ürünleri buraya eklenebilir -->
+        </div>
+
+        <div class="buttons-container">
+            <button class="button" data-target="drinkMenu" onclick="toggleMenu('drinkMenu')">
+                <img class="button__image" src="icecek2.jpeg" alt="İçecekler">
+                <h3 class="button__title">İçecekler</h3>
+            </button>
+        </div>
+
+        <div class="menu" id="drinkMenu">
+            <button class="button" data-target="hotDrinksMenu" onclick="toggleSubMenu('hotDrinksMenu')">Sıcak İçecekler</button>
+            <div class="sub-menu" id="hotDrinksMenu">
+                <div class="item">
+                    <img class="item__image" src="cay.jpeg" alt="Çay">
+                    <h3 class="item__title">Çay</h3>
+                    <span class="item__price">10₺</span>
+                </div>
+                <div class="item">
+                    <img class="item__image" src="latte.webp" alt="Latte">
+                    <h3 class="item__title">Latte</h3>
+                    <span class="item__price">40₺</span>
+                </div>
+                <div class="item">
+                    <img class="item__image" src="turk_kahvesi.jpeg" alt="Türk Kahvesi">
+                    <h3 class="item__title">Türk Kahvesi</h3>
+                    <span class="item__price">25₺</span>
+                </div>
+            </div>
+            <button class="button" data-target="coldDrinksMenu" onclick="toggleSubMenu('coldDrinksMenu')">Soğuk İçecekler</button>
+            <div class="sub-menu" id="coldDrinksMenu">
+                <div class="item">
+                    <img class="item__image" src="kola.jpeg" alt="Kola">
+                    <h3 class="item__title">Kola</h3>
+                    <span class="item__price">20₺</span>
+                </div>
+                <div class="item">
+                    <img class="item__image" src="sprite.jpg" alt="Sprite">
+                    <h3 class="item__title">Sprite</h3>
+                    <span class="item__price">20₺</span>
+                </div>
+                <div class="item">
+                    <img class="item__image" src="fanta.jpg" alt="Fanta">
+                    <h3 class="item__title">Fanta</h3>
+                    <span class="item__price">20₺</span>
+                </div>
+                <div class="item">
+                    <img class="item__image" src="ayran.jpeg" alt="Ayran">
+                    <h3 class="item__title">Ayran</h3>
+                    <span class="item__price">15₺</span>
+                </div>
+                <div class="item">
+                    <img class="item__image" src="maden_suyu.jpeg" alt="Maden Suyu">
+                    <h3 class="item__title">Maden Suyu</h3>
+                    <span class="item__price">15₺</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons-container">
+            <button class="button" data-target="snackMenu" onclick="toggleMenu('snackMenu')">
+                <img class="button__image" src="apr1.webp" alt="Aperatifler">
+                <h3 class="button__title">Aperatifler</h3>
+            </button>
+        </div>
+
+        <div class="menu" id="snackMenu">
+            <div class="item">
+                <img class="item__image" src="patates.png" alt="Patates Kızartması">
+                <h3 class="item__title">Patates Kızartması</h3>
+                <span class="item__price">25₺</span>
+                <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="item">
+                <img class="item__image" src="mevsim_salata.jpeg" alt="Mevsim Salata">
+                <h3 class="item__title">Mevsim Salata</h3>
+                <span class="item__price">55₺</span>
+                <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="item">
+                <img class="item__image" src="patates-kroket.jpeg" alt="Patates Kroket">
+                <h3 class="item__title">Patates Kroket</h3>
+                <span class="item__price">32₺</span>
+                <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="item">
+                <img class="item__image" src="sogan_halkasi.jpeg" alt="Soğan Halkası">
+                <h3 class="item__title">Soğan Halkası</h3>
+                <span class="item__price">32₺</span>
+                <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
